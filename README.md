@@ -33,7 +33,7 @@ struct Localizations {
 It is built to be a drop in replacement for the [Laurine - Storyboard Generator Script](https://github.com/JiriTrecak/Laurine) which unfortunately stopped being maintained in 2017.
 
 ## Requirements
-* Swift 5.*
+* Swift 5.* (5.5 for SPM)
 
 ## Currently not supported
 * Multiline strings: Please use `\n` to format your strings within your `Localizable.strings` file
@@ -42,7 +42,7 @@ It is built to be a drop in replacement for the [Laurine - Storyboard Generator 
 
 You can install the library via SPM or Cocoapods.
 
-> **Note:** It is highly recommended to use the Swift Build Plugin version as there is no guarantee for future Cocoapod compatibility.
+> ☝️ **Note:** It is highly recommended to use the Swift Build Plugin version as there is no guarantee for future Cocoapod compatibility.
 
 ### Swift Package Manager (SPM)
 

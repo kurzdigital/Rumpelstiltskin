@@ -6,14 +6,20 @@
 //
 
 import SwiftUI
+import SPMExamplePackage
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(alignment: .leading, spacing: 10) {
+            Button(Localizations.Buttons.Example) {}
+
+            Text(Localizations.LongerText.NoMultiline)
+
+            // Messages localized inside a SPM package
+            Text(SPMExamplePackage.exampleSPMString)
+            Text(SPMExamplePackage.exampleSPMString2)
+
+            Button(Localizations.Accessibility.Button(value1: "Some Value")) {}
         }
         .padding()
     }
